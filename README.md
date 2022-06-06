@@ -6,6 +6,8 @@ This python application will explore a dataset containing information on 3 milli
 <p align="center">
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
 </p>
+</br>
+</br>
 
 
 <h2>Business Understanding</h2>
@@ -14,7 +16,11 @@ The Business task is to identify which factors make a car more or less expensive
 <h2>Data Understanding</h2>
 The dataset given is in .csv format.It consists of 18 columns and 426880 rows as shown below. The target columns is "price" which is numerical. there are only two more columns numerical: "odometer" and "year", i.e., the rest of the columns are categorical. Consequently, most of the dataset provided is imbalanced, suggesting that the modeling part will problematic at some extend. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed.
 
+</br>
+</br>
 <p align="center">
 <img src="images/figure2_data_1.jpeg" width="400px" height="500px">
 </p>
+</br>
+</br>
 
