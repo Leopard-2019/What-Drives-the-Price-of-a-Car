@@ -13,6 +13,6 @@ The Business task is to identify which factors make a car more or less expensive
 The dataset given is in .csv format.It consists of 18 columns and 426880 rows as shown below. The target columns is "price" which is numerical. there are only two more columns numerical: "odometer" and "year", i.e., the rest of the columns are categorical. Consequently, most of the dataset provided is imbalanced. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed.
 
 <p align="center">
-<img src="images/figure2_data_1.jpeg" width="400px" height="300px">
+<img src="images/figure2_data_1.jpeg" width="400px" height="500px">
 </p>
 
