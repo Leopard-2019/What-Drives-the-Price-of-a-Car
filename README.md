@@ -13,5 +13,5 @@ The Business task is to identify which factors make a car more or less expensive
 The dataset given is in .csv format an consist of 18 columns and 426880 rows as shown below
 
 <p align="center">
-<img src="images/figure2_data_1.jpeg" width="300px" height="300px">
+<img src="images/figure2_data_1.jpeg" width="500px" height="500px">
 </p>
