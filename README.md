@@ -23,5 +23,5 @@ As a part of this step, it was also checked if there were "NaN" values, or the p
 </p>
 
 <p align="center">
-<img src="images/figure2_data_3.jpeg" width="800px" height="2000px">
+<img src="images/figue2_data_3.jpeg" width="800px" >
 </p>
