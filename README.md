@@ -19,9 +19,9 @@ The dataset given is in .csv format.It consists of 18 columns and 426880 rows as
 As a part of this step, it was also checked if there were "NaN" values, or the presence of duplicates as shown below:
 
 <p align="center">
-<img src="images/figure2_data_2.jpeg" width="400px">
+<img src="images/figure2_data_2.jpeg" width="800px">
 </p>
 
 <p align="center">
-<img src="images/figure2_data_3.jpeg">
+<img src="images/figure2_data_3.jpeg" width="800px" height="400px">
 </p>
