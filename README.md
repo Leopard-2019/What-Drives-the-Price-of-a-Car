@@ -19,3 +19,5 @@ The dataset given is in .csv format.It consists of 18 columns and 426880 rows as
 <img src="images/figure2_data_1.jpeg" width="400px" height="500px">
 </p>
 
+<h2>Data Preparation</h2>
+
