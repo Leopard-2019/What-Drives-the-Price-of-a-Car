@@ -177,8 +177,39 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 </br>
 <p align="center">
-<img src="images/boxplotprice&states.png">
-<h4 align="center"> Figure 21</h4>
+<img src="images/boxplotprice&cylinders.jpeg">
+<h4 align="center"> Figure 22</h4>
 </p>
 
-<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
+<h4>Observation:</h4> Really surprised that the cars with the most cylinders are not the most expensive, that label belongs to the one with 10 cylinders. Likewise, the cheapers are not the ones with 4 cylinders, the ones with 5 cylinders are.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&types.jpeg">
+<h4 align="center"> Figure 23</h4>
+</p>
+
+<h4>Observation:</h4> There is not observable pattern in this category, trucks are even more expensive than the bus and convertibles as many may have not thought.  A battle between the sedan and the hatchback cars for the cheapers cars is observed.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&Manufacturer.jpeg">
+<h4 align="center"> Figure 24</h4>
+</p>
+
+<h4>Observation:</h4>  A bit surprised that the most expensive used cars by a relative large margin are the ones manufactured by Tesla. Th cheapers are the ones manufactured by satum.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&states.png">
+<h4 align="center"> Figure 25</h4>
+</p>
+
+<h4>Observation:</h4> Certainly, the place to look for  cheapers used cars is Washington DC, and the ones not to go for that are: Arkansas,Tennessee, and South Dakota , in that orders.
+
+<h4>Treatment of Categorical Columns</h4>
+
+<h5>Nominal Features</h5>
