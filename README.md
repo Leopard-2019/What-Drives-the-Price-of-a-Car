@@ -13,7 +13,7 @@ This python application will explore a dataset containing information on 3 milli
 The Business task is to identify which factors make a car more or less expensive by using python & its libraries in jupyter notebook. This application will allow not only dealer tagging a price for a particular car that will be on the market, but also potential buyer to negociate a fair price for any particular car she/he/they is/are interested in.
 
 <h2>Data Understanding</h2>
-The dataset (vehicles.csv) given is in .csv format.It consists of 18 columns and 426880 rows as shown below (see Figure 2). The target columns is "price" which is numerical. there are only two more columns numerical: "odometer" and "year", i.e., the rest of the columns are categorical. Consequently, most of the dataset provided is imbalanced, suggesting that the modeling part will not be easy at some extend, specially considering the limitation regarding the cross-validation techniques that can be employed, and also the regression models options that can work in this particular case. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed. It is thought that in order to provide  more insight into the aforementioned dataset, a data preparation, i.e, data cleaning process needs to be done first.
+The dataset (vehicles.csv) given is in .csv format.It consists of 18 columns and 426880 rows as shown below (see Figure 2). The target columns is "price" which is numerical. there are only two more columns numerical: "odometer" and "year", i.e., the rest of the columns are categorical (ordinal and nominal). Consequently, most of the dataset provided will be imbalanced before entering the modeling phase, suggesting it will not be easy at some extend, specially considering the limitation regarding the cross-validation techniques that can be employed, and also the regression models options that can work in this particular case. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed. It is thought that in order to provide  more insight into the aforementioned dataset, a data preparation, i.e, data cleaning process needs to be done first.
 
 </br>
 </br>
@@ -128,12 +128,28 @@ Table 1 shows the final statistics of the target column "price":
 <h4 align="center"> Figure 16</h4>
 </p>
 
-Once a effective work has been done on removing most or all of the outliers in the target column "price", boxplot "price" vs. the rest of the columns can be built as follows:
+Once a effective cleaning work has been completed removing most or all of the outliers in the target column "price", boxplot "price" vs. the rest of the columns can be built as follows:
 
 </br>
 <p align="center">
-<img src="images/boxplotprice&year.png" width="1200px">
+<img src="images/boxplotprice&year.png">
 <h4 align="center"> Figure 17</h4>
 </p>
 
+<h4>Observation:</h4>It is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a positive correlation between these two variable can be expected.
 
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&fuel.png">
+<h4 align="center"> Figure 18</h4>
+</p>
+
+<h4>Observation:</h4> The most expensive cars are the ones fueled by diesel,and the cheaper are the ones fueled by hybrid.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&condition.png">
+<h4 align="center"> Figure 19</h4>
+</p>
