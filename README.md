@@ -177,7 +177,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 </br>
 <p align="center">
-<img src="images/boxplotprice&types.png">
+<img src="images/boxplotprice&Manufacturer.png">
 <h4 align="center"> Figure 21</h4>
 </p>
 
