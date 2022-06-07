@@ -73,4 +73,4 @@ Although the data preparation process is not totally completed, more insight int
 <h4 align="center"> Figure 9</h4>
 </p>
 
-<h3>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h3>
+<h4>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h4>
