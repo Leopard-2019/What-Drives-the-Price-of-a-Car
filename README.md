@@ -76,6 +76,7 @@ Although the data preparation process is not totally completed, more insight int
 <h4>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h4>
 The presence of outliers in the numerical columns: 'price", "odometer", and "year" (see Figures 10, 12 and 12) indicated by the respective boxplot demands a careful and efective treatment in order to have to continue to the modeling phase. The histogram of the aforementioned columns have been also added for completeness.
 
+
 </br>
 <p align="center">
 <img src="images/figure3_box1.jpeg" width="1000px">
