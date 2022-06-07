@@ -23,5 +23,5 @@ The dataset (vehicles.csv) given is in .csv format.It consists of 18 columns and
 The first step was to drop the null values (see figure below), and also make sure that there was not duplicates present in the dataset as well.
 
 <p align="center">
-<img src="images/figue2_data_4.jpeg" width="600px" height="400px">
+<img src="images/figue2_data_4.jpeg" width="800px">
 </p>
