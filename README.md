@@ -211,4 +211,5 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4>Observation:</h4> Certainly, the place to look for  cheapers used cars is Washington DC, and the ones not to go for that are: Arkansas,Tennessee, and South Dakota , in that orders.
 
 <h4>Treatment of Categorical Columns</h4>
-<5>Nominal Features</h5>
+
+<h5>Nominal Features</h5>
