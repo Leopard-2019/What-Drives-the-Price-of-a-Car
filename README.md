@@ -146,3 +146,10 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </p>
 
 <h4>Observation:</h4> The most expensive cars are the ones fueled by diesel,and the cheaper are the ones fueled by hybrid.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&condition.png">
+<h4 align="center"> Figure 19</h4>
+</p>
