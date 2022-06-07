@@ -74,7 +74,7 @@ Although the data preparation process is not totally completed, more insight int
 </p>
 
 <h4>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h4>
-The presence of outliers in the numerical columns: 'price", "odometer", and "year" (see Figures 10, 12 and 12) indicated by the respective boxplot demands a careful and efective treatment in order to have to continue to the modeling phase. The histogram of the aforementioned columns have been also added for completeness.
+The presence of outliers in the numerical columns: 'price", "odometer", and "year" (see Figures 10, 12 and 12) indicated by the respective boxplot demands a careful and efective treatment in order to have to continue to the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
 
 </br>
 </br>
@@ -95,4 +95,27 @@ The presence of outliers in the numerical columns: 'price", "odometer", and "yea
 <p align="center">
 <img src="images/figure3_box3.jpeg" width="1000px">
 <h4 align="center"> Figure 12</h4>
+</p>
+
+Two passes were applied to the aforementioned columns in order to remove the outliers. Before applying these two passes, values equal to 0 and 1 were removed from the column "price". The first pass consisted on applying the well known Inter quartile range (IQR) method, and the second passes consisted on appyling the DBSCAN ("Density-Based Spatial Clustering of Applications with Noise") method. Figure 13, 14, and 15 shows the final results after applying those two methods to remove the outliers. As it can be observed, the two passes were very effective. as an additional comments, the target column "price" shown a distribution skewed to the right, i.e, its logarithm version was used during the regression modeling by using the TransformedTargetRegressor tool.
+
+</br>
+</br>
+<p align="center">
+<img src="images/figure3_box1a.jpeg" width="1000px">
+<h4 align="center"> Figure 13</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/figure3_box2a.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/figure3_box3a.jpeg" width="1000px">
+<h4 align="center"> Figure 15</h4>
 </p>
