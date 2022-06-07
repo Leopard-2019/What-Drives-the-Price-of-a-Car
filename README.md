@@ -46,3 +46,34 @@ Columns: "fuel", "cylinders", "type", and "transmission" have a feature with the
 <h4 align="center"> Figure 5</h4>
 </p>
 </br>
+
+Although the data preparation process is not totally completed, more insight into the dataset can be gained by doing the histograms for all categorical data first:
+
+</br>
+<p align="center">
+<img src="images/histogram1.png" width="1400px">
+<h4 align="center"> Figure 6</h4>
+</p>
+</br>
+
+</br>
+<p align="center">
+<img src="images/histogram2.png" width="1400px">
+<h4 align="center"> Figure 7</h4>
+</p>
+</br>
+
+</br>
+<p align="center">
+<img src="images/histogram3.png" width="1400px">
+<h4 align="center"> Figure 8</h4>
+</p>
+</br>
+
+</br>
+<p align="center">
+<img src="images/histogram4.png" width="300px">
+<h4 align="center"> Figure 9</h4>
+</p>
+</br>
+
