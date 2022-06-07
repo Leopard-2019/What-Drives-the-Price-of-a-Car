@@ -221,4 +221,4 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4>Treatment of Categorical Features</h4>
 
 <h5>Nominal Features</h5>
-Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns fall in this category as follows: "fuel", "cylinders","type","transmission", "manufacturer", "state", "size", "paint_color", "title_status", "model", and "drive".
+Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "fuel", "cylinders","type","transmission", "manufacturer", "state", "size", "paint_color", "title_status", "model", and "drive". The Pandas getdummies function to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. It is important to highlight that the column: "model" not encoded, i.e., not used for the rest of the analysis, since it contains 4375 features. Otherwise, it will takes geological ages to do any modelling in my laptop.
