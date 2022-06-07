@@ -5,7 +5,7 @@ This python application will explore a dataset containing information on 3 milli
 </br>
 <p align="center">
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
-<h3 align="center"> Figure 1</h3>
+<h4 align="center"> Figure 1</h4>
 </p>
 
 
