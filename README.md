@@ -140,7 +140,7 @@ Once a effective work has been cpmpleted removing most or all of the outliers in
 
 </br>
 <p align="center">
-<img src="boxplotprice&fuel.png">
+<img src="images/boxplotprice&fuel.png">
 <h4 align="center"> Figure 18</h4>
 </p>
 
