@@ -56,24 +56,5 @@ Although the data preparation process is not totally completed, more insight int
 </p>
 </br>
 
-</br>
-<p align="center">
-<img src="images/histogram2.png" width="1400px">
-<h4 align="center"> Figure 7</h4>
-</p>
-</br>
 
-</br>
-<p align="center">
-<img src="images/histogram3.png" width="1400px">
-<h4 align="center"> Figure 8</h4>
-</p>
-</br>
-
-</br>
-<p align="center">
-<img src="images/histogram4.png" width="300px">
-<h4 align="center"> Figure 9</h4>
-</p>
-</br>
 
