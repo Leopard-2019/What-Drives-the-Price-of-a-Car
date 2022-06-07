@@ -181,7 +181,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 22</h4>
 </p>
 
-<h4>Observation:</h4> Really surprised that the cars with the most cylinders are not the most expensive, that label belongs to the one with 10 cylinders. Likewise, the cheapers are not the ones with 4 cylinders, are the ones with 5 cylinders.
+<h4>Observation:</h4> Really surprised that the cars with the most cylinders are not the most expensive, that label belongs to the one with 10 cylinders. Likewise, the cheapers are not the ones with 4 cylinders, the ones with 5 cylinders are.
 
 </br>
 </br>
@@ -199,7 +199,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 24</h4>
 </p>
 
-<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected
+<h4>Observation:</h4>  A bit surprised that the most expensive used cars by a relative large margin are the ones manufactured by Tesla. Th cheapers are the ones manufactured by satum.
 
 </br>
 </br>
@@ -208,4 +208,4 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 25</h4>
 </p>
 
-<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
+<h4>Observation:</h4> Certainly, the place to look for  cheapers used cars is Washington DC, and the ones not to go for that are: Arkansas,Tennessee, and South Dakota , in that orders.
