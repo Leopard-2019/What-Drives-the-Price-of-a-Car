@@ -4,8 +4,10 @@ This python application will explore a dataset containing information on 3 milli
 </br>
 </br>
 <p align="center">
-<h4>Figure 1</h4>
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
+</p>
+<p align="center">
+<h4>Figure 1</h4>
 </p>
 
 <h2>Business Understanding</h2>
