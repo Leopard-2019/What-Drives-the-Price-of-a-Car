@@ -132,7 +132,7 @@ Once a effective work has been done on removing most or all of the outliers in t
 
 </br>
 <p align="center">
-<img src="images/boxplotprice&year.png" width="400px">
+<img src="images/boxplotprice&year.png" width="1000px">
 <h4 align="center"> Figure 17</h4>
 </p>
 
