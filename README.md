@@ -163,4 +163,4 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 20</h4>
 </p>
 
-<h4>Observation:</h4> The most expensive cars are the ones that look like new as expected,and the cheaper are the ones looking fair.
+<h4>Observation:</h4> The most expensive cars are the full size as expected,and the cheaper are the compact, which makes sense.
