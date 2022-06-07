@@ -128,12 +128,8 @@ Table 1 shows the final statistics of the target column "price":
 <h4 align="center"> Figure 16</h4>
 </p>
 
-Once a effective work has been done on removing most or all of the outliers in the target column "price", boxplot "price" vs. the rest of the columns can be built as follows:
-
-</br>
-<p align="center">
-<img src="images/boxplotprice&year.png" width="1200px">
-<h4 align="center"> Figure 17</h4>
-</p>
+Once a effective work has been cpmpleted removing most or all of the outliers in the target column "price", boxplot "price" vs. the rest of the columns can be built as follows:
 
 
+
+Observation: it is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a positive correlation between these two variable can be expected.
