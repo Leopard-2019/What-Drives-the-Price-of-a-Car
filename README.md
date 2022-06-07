@@ -127,3 +127,13 @@ Table 1 shows the final statistics of the target column "price":
 <img src="images/figure3_table1.jpeg" width="400px">
 <h4 align="center"> Figure 16</h4>
 </p>
+
+Once a effective work has been done on removing most or all of the outliers in the target column "price", boxplot "price" vs. the rest of the columns can be built as follows:
+
+</br>
+<p align="center">
+<img src="images/boxplotprice&year.png" width="400px">
+<h4 align="center"> Figure 17</h4>
+</p>
+
+
