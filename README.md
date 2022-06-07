@@ -160,6 +160,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 <p align="center">
 <img src="images/boxplotprice&size.png">
+  
 <h4 align="center"> Figure 20</h4>
 </p>
 
