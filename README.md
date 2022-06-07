@@ -51,28 +51,28 @@ Although the data preparation process is not totally completed, more insight int
 
 </br>
 <p align="center">
-<img src="images/histogram1.jpeg" width="1600px">
+<img src="images/histogram1.jpeg" width="1000px">
 <h4 align="center"> Figure 6</h4>
 </p>
 </br>
 
 </br>
 <p align="center">
-<img src="images/histogram2.jpeg" width="1600px">
+<img src="images/histogram2.jpeg" width="1000px">
 <h4 align="center"> Figure 7</h4>
 </p>
 </br>
 
 </br>
 <p align="center">
-<img src="images/histogram3.jpeg" width="1600px">
+<img src="images/histogram3.jpeg" width="1000px">
 <h4 align="center"> Figure 8</h4>
 </p>
 </br>
 
 </br>
 <p align="center">
-<img src="images/histogram4.jpeg" width="400px">
+<img src="images/histogram4.jpeg" width="300px">
 <h4 align="center"> Figure 9</h4>
 </p>
 </br>
