@@ -250,7 +250,7 @@ The make_column_transformer  function is used to apply the transformer to the af
 </p>
 
 <h5>Correlation among the original numerical columns: "price", "year", and "odometer"</h5>
-A cross-correlation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Figure 29. Consequently, it was decided to drop the column: "odometer".
+A cross-correlation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Heatmap in Figure 29. Consequently, it was decided to drop the column: "odometer".
 
 </br>
 </br>
