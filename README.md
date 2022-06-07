@@ -32,7 +32,6 @@ The first step was to drop the null values (see Figure 3), and also make sure th
 </p>
 
 </br>
-</br>
 <p align="center">
 <img src="images/figure2_data5.jpeg" width="800px">
 <h4 align="center"> Figure 4</h4>
