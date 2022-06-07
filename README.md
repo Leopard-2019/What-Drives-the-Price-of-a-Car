@@ -49,10 +49,5 @@ Columns: "fuel", "cylinders", "type", and "transmission" have a feature with the
 
 Although the data preparation process is not totally completed, more insight into the dataset can be gained by doing the histograms for all categorical data first as shown on Figure 6, Figure 7, Figure 8, and Figure 9. The first observation is that there are two categorical data: ordinal and nominal. The second observation that the categorical columns: "fuel", "manufacturer", "Condition", "size", "type", "drive", and "paint color" may be biased or driven by one predominant feature as indicated by their distribution dramatically skewed to the left.
 
-</br>
-<p align="center">
-<img src="images/histogram1.jpeg" width="1200px">
-<h4 align="center"> Figure 4</h4>
-</p>
-</br>
+
 
