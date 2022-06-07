@@ -177,8 +177,35 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 </br>
 <p align="center">
+<img src="images/boxplotprice&cylinders.jpeg">
+<h4 align="center"> Figure 22</h4>
+</p>
+
+<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&types.jpeg">
+<h4 align="center"> Figure 23</h4>
+</p>
+
+<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&Manufacturer.jpeg">
+<h4 align="center"> Figure 24</h4>
+</p>
+
+<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected
+
+</br>
+</br>
+<p align="center">
 <img src="images/boxplotprice&states.png">
-<h4 align="center"> Figure 21</h4>
+<h4 align="center"> Figure 25</h4>
 </p>
 
 <h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
