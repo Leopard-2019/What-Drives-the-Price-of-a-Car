@@ -72,7 +72,7 @@ Although the data preparation process is not totally completed, more insight int
 
 </br>
 <p align="center">
-<img src="images/histogram4.jpeg" width="300px">
+<img src="images/histogram4.jpeg" width="400px">
 <h4 align="center"> Figure 9</h4>
 </p>
 </br>
