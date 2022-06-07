@@ -144,7 +144,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 18</h4>
 </p>
 
-<h4>Observation:</h4>It is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a positive correlation between these two variable can be expected.
+<h4>Observation:</h4>It is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a really nice positive correlation between these two variables are expected.
 
 </br>
 </br>
