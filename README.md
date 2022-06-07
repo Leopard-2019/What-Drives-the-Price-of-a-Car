@@ -172,4 +172,13 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 21</h4>
 </p>
 
-<h4>Observation:</h4> The most expensive cars are the full size as expected,and the cheaper are the compact, which makes sense.
+<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&ttypes.png">
+<h4 align="center"> Figure 21</h4>
+</p>
+
+<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
