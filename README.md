@@ -255,6 +255,6 @@ A cross-correlation among the original numerical columns:"price", "year", and "o
 </br>
 </br>
 <p align="center">
-<img src="images/corr1.png" width="400px">
+<img src="images/corr1.png" width="500px">
 <h4 align="center"> Figure 29</h4>
 </p>
