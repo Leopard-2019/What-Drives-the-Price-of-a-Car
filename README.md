@@ -164,3 +164,12 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </p>
 
 <h4>Observation:</h4> The most expensive cars are the full size as expected,and the cheaper are the compact, which makes sense.
+
+</br>
+</br>
+<p align="center">
+<img src="images/boxplotprice&cylinders.png">
+<h4 align="center"> Figure 21</h4>
+</p>
+
+<h4>Observation:</h4> The most expensive cars are the full size as expected,and the cheaper are the compact, which makes sense.
