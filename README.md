@@ -124,7 +124,7 @@ Table 1 shows the final statistics of the target column "price":
 
 </br>
 <p align="center">
-<img src="images/figure3_table1.jpeg" width="400px">
+<img src="images/figure3_table1.jpeg">
 <h4 align="center"> Figure 16</h4>
 </p>
 
