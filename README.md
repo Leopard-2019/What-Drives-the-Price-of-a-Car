@@ -47,7 +47,7 @@ Columns: "fuel", "cylinders", "type", and "transmission" have a feature with the
 </p>
 </br>
 
-Although the data preparation process is not totally completed, more insight into the dataset can be gained by doing the histograms for all categorical columns as shown on Figure 6, Figure 7, Figure 8, and Figure 9. The first observation is that there are two categorical data: ordinal and nominal. The second observation is that the categorical columns: "fuel", "manufacturer", "Condition", "size", "type", "drive", and "paint color" may be biased or driven by one predominant feature as indicated by their distribution dramatically skewed to the left. For instance, the presence of feature "gas" in the column 'fuel" is overwhelming, which is logical since most of cars are fueled by gas.
+Although the data preparation process is not totally completed, more insight into the dataset can be gained by doing the histograms for all categorical columns as shown on Figures 6, 7, 8, 9. The first observation is that there are two categorical data: ordinal and nominal. The second observation is that the categorical columns: "fuel", "manufacturer", "Condition", "size", "type", "drive", and "paint color" may be biased or driven by one predominant feature as indicated by their distribution dramatically skewed to the left. For instance, the presence of feature "gas" in the column 'fuel" is overwhelming, which is logical since most of cars are fueled by gas.
 
 </br>
 <p align="center">
@@ -74,3 +74,25 @@ Although the data preparation process is not totally completed, more insight int
 </p>
 
 <h4>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h4>
+The presence of outliers in the numerical columns: 'price", "odometer", and "year" (see Figures 10, 12 and 12) indicated by the respective boxplot demands a careful and efective treatment in order to have to continue to the modeling phase. The histogram of the aforementioned columns have been also added for completeness.
+
+</br>
+</br>
+<p align="center">
+<img src="images/figure3_box1.jpeg" width="1000px">
+<h4 align="center"> Figure 10</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/figure3_box2.jpeg" width="1000px">
+<h4 align="center"> Figure 11</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/figure3_box3.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
