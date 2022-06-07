@@ -160,8 +160,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 <p align="center">
 <img src="images/boxplotprice&size.png">
-  
-<h4 align="center"> Figure 20</h4>
+ <h4 align="center"> Figure 20</h4>
 </p>
 
 <h4>Observation:</h4> The most expensive cars are the full size as expected,and the cheaper are the compact, which makes sense.
@@ -169,7 +168,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 </br>
 <p align="center">
-<img src="images/boxplotprice&cylinders.png">
+<img src="images/boxplotprice&titlestatus.png">
 <h4 align="center"> Figure 21</h4>
 </p>
 
