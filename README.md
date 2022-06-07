@@ -36,3 +36,13 @@ The first step was to drop the null values (see Figure 3), and also make sure th
 <img src="images/figure2_data5.jpeg" width="800px">
 <h4 align="center"> Figure 4</h4>
 </p>
+</br>
+
+Columns: "fuel", "cylinders", "type", and "transmission" have a feature with the same name: "other", so it was decided to replace it wiht different name to avoid potential problems in the foregoing analysis as indicated by Figure 5:
+
+</br>
+<p align="center">
+<img src="images/figure2_data_6.jpeg" width="800px">
+<h4 align="center"> Figure 5</h4>
+</p>
+</br>
