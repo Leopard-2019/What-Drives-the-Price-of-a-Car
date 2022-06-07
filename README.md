@@ -20,4 +20,8 @@ The dataset (vehicles.csv) given is in .csv format.It consists of 18 columns and
 </p>
 
 <h2>Data Preparation</h2>
+The first step was to drop the null values (see figure below), and also make sure that there was not duplicates present in the dataset as well.
 
+<p align="center">
+<img src="images/figue2_data_4.jpeg" width="400px" height="500px">
+</p>
