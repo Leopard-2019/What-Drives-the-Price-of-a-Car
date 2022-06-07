@@ -181,7 +181,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 22</h4>
 </p>
 
-<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
+<h4>Observation:</h4> Really surprised that the cars with the most cylinders are not the most expensive, that label belongs to the one with 10 cylinders. Likewise, the cheapers are not the ones with 4 cylinders, are the ones with 5 cylinders.
 
 </br>
 </br>
@@ -190,7 +190,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 23</h4>
 </p>
 
-<h4>Observation:</h4> The cars with title status as "lien" are slightly the most expensive, the cheaper are the ones with title status listed as "missing" as must be expected.
+<h4>Observation:</h4> There is not observable pattern in this category, trucks are even more expensive than the bus and convertibles as many may have not thought.  A battle between the sedan and the hatchback cars for the cheapers cars is observed.
 
 </br>
 </br>
