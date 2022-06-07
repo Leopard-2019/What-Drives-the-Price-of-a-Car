@@ -140,7 +140,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 
 </br>
 <p align="center">
-<img src="images/boxplotprice&year.png">
+<img src="images/boxplotprice&year.jpeg">
 <h4 align="center"> Figure 18</h4>
 </p>
 
