@@ -5,10 +5,9 @@ This python application will explore a dataset containing information on 3 milli
 </br>
 <p align="center">
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
+ <p> Figure 1</p>
 </p>
-<p align="center">
-<h4>Figure 1</h4>
-</p>
+
 
 <h2>Business Understanding</h2>
 The Business task is to identify which factors make a car more or less expensive by using python & its libraries in jupyter notebook. This application will allow not only dealer tagging a price for a particular car that will be on the market, but also potential buyer to negociate a fair price for any particular car she/he/they is/are interested in.
