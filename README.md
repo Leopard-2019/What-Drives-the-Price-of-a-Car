@@ -55,3 +55,21 @@ Although the data preparation process is not totally completed, more insight int
 <h4 align="center"> Figure 6</h4>
 </p>
 
+</br>
+<p align="center">
+<img src="images/figure2_histo2.jpeg" width="1000px">
+<h4 align="center"> Figure 7</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/figure2_histo3.jpeg" width="1000px">
+<h4 align="center"> Figure 8</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/figure2_histo4.jpeg" width="1000px">
+<h4 align="center"> Figure 9</h4>
+</p>
+
