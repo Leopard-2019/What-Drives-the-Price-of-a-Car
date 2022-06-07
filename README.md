@@ -136,4 +136,4 @@ Once a effective work has been cpmpleted removing most or all of the outliers in
 <h4 align="center"> Figure 17</h4>
 </p>
 
-<h5>Observation:</h5>It is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a positive correlation between these two variable can be expected.
+<h4>Observation:</h4>It is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a positive correlation between these two variable can be expected.
