@@ -249,3 +249,12 @@ The make_column_transformer  function is used to apply the transformer to the af
 <h4 align="center"> Figure 28</h4>
 </p>
 
+<h5>Correlation among the original numerical columns: "price", "year", and "odometer"</h5>
+A cross-correlation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Figure 29. Consequently, it was decided to drop the column: "odometer".
+
+</br>
+</br>
+<p align="center">
+<img src="images/corr1.png" width="800px">
+<h4 align="center"> Figure 29</h4>
+</p>
