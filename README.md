@@ -275,7 +275,12 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 31</h4>
 </p>
 
-As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 144 columns and 29250 rows.
+As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 144 columns and 29250 rows. Figure 32 shows the histogram for columns comprising X dataset.
+<p align="center">
+<img src="images/Xhisto.png" width="1400px" height="600px>
+<h4 align="center"> Figure 32</h4>
+</p>
+</br>
 
 <h2>Modeling</h2>
 <h3>Cross-Validation Approach used</h3>
@@ -285,7 +290,7 @@ Most of the indepent variables, i.e. columns (after treating the nominal categor
 </br>
 <p align="center">
 <img src="images/stratafold.jpeg" width="800px">
-<h4 align="center"> Figure 31</h4>
+<h4 align="center"> Figure 33</h4>
 </p>
 
 Getting this message is because the dependent variable y (i.e, the target columns: "price") doesn't have sufficient class labels of one of the classes to keep the data splitting ratio equal to test_size. Consequently, I gave up using the StratifiedKFold function. Instead, I did chose to use train_test_split function with all its shortcoming ( not keeping same data ratio of target column in samples) when part of the data is imbalanced.
