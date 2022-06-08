@@ -288,4 +288,4 @@ Most of the indepent variables, i.e. columns (after treating the nominal categor
 <h4 align="center"> Figure 31</h4>
 </p>
 
-Getting this message is because the dependent variable y (i.e, the target columns: "price") doesn't have sufficient class labels of one of the classes to keep the data splitting ratio equal to test_size. Consequently, I gave up using the StratifiedKFold function. Instead, I did chose to use train_test_split function with all its shortcoming (splitting data randomly not considering any distribution) when part of the data is imbalanced.
+Getting this message is because the dependent variable y (i.e, the target columns: "price") doesn't have sufficient class labels of one of the classes to keep the data splitting ratio equal to test_size. Consequently, I gave up using the StratifiedKFold function. Instead, I did chose to use train_test_split function with all its shortcoming ( not keeping same data ratio of target column in samples) when part of the data is imbalanced.
