@@ -270,3 +270,12 @@ Splitting the dependent variable from the independent variables and assigning th
 </p>
 
 <h2>Modeling</h2>
+<h3>Cross-Validation Approach used</h3>
+Most of the indepent variables, i.e. columns (after treating the nominal categories) are imbalanced dataset. Thus, not all the cross-validation techniques can be used, if reliables training and validation dataset are desired to be built for modeling purpose. Beside, the leave one out cross-validation which is very exhaustive from the computational point of view, there is only one remaining: Stratified K-Fold Cross-Validation. I really tried to test it, but everytime, I was getting the message shown below:
+
+</br>
+</br>
+<p align="center">
+<img src="images/stratafold.jpeg" width="800px">
+<h4 align="center"> Figure 29</h4>
+</p>
