@@ -229,3 +229,32 @@ Nominal features are categorical features that have no numerical importance. Ord
 <img src="images/nominal.jpeg" width="800px">
 <h4 align="center"> Figure 27</h4>
 </p>
+
+<h5>Ordinal Features</h5>
+The categorical feature "condition" is ordered values, so a numeric value representing the scale can be used. In this case, a scale of 0 - 5 can associate the categories with an order in a list from least to greatest. Creating an OrdinalEncoder with these categories will transform the condition feature mapping each category as:
+
+'salvage': 0
+'fair: 1
+'good': 2
+'excellent': 3
+'like new': 4
+'new':5
+
+The make_column_transformer  function is used to apply the transformer to the aforemetioned features as follows:
+
+</br>
+</br>
+<p align="center">
+<img src="images/ordinal.jpeg" width="800px">
+<h4 align="center"> Figure 28</h4>
+</p>
+
+<h5>Correlation among the original numerical columns: "price", "year", and "odometer"</h5>
+A cross-correlation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Heatmap in Figure 29. Consequently, it was decided to drop the column: "odometer".
+
+</br>
+</br>
+<p align="center">
+<img src="images/corr1.png" width="500px">
+<h4 align="center"> Figure 29</h4>
+</p>
