@@ -259,7 +259,7 @@ A cross-correlation among the original numerical columns:"price", "year", and "o
 <h4 align="center"> Figure 29</h4>
 </p>
 
-<h5>splitting the variables</h5>
+<h5>Splitting the variables</h5>
 Splitting the dependent variable from the independent variables and assigning them to y and x respectively was done as follows:
 
 </br>
