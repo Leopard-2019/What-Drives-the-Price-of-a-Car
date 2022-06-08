@@ -275,7 +275,7 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 31</h4>
 </p>
 
-As it is observed the columns: "VIN", "id"  were also dropped. 
+As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 144 columns and 29250 rows.
 
 <h2>Modeling</h2>
 <h3>Cross-Validation Approach used</h3>
