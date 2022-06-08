@@ -275,7 +275,7 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 31</h4>
 </p>
 
-As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 144 columns and 29250 rows. Figure 32 shows the histogram for columns comprising X dataset.
+As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 144 columns and 29250 rows. Figure 32 shows the histogram for columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bar, etc in the hisogram, because there are too many histogram, so I do appreciate the undertanding.
 <p align="center">
 <img src="images/Xhisto.png" width="1400px" height="600px>
 <h4 align="center"> Figure 32</h4>
@@ -309,4 +309,13 @@ As mentioned above, the splitting data into training and testing sets was done u
 <p align="center">
 <img src="images/splittingdata.jpeg" width="800px">
 <h4 align="center"> Figure 35</h4>
+</p>
+
+<h3>Regression Models Built</h3>
+<h4>Ridge regression model</h4>
+The pipeline model is shown in Figure 36. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.exp. 
+</br>
+<p align="center">
+<img src="images/RidgeModel_1.jpeg" width="800px">
+<h4 align="center"> Figure 36</h4>
 </p>
