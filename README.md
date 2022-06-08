@@ -341,25 +341,25 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha tested
                   
 </br>
 <p align="center">
-<img src="images/RidgeModel_3.jpeg" width="200px">
+<img src="images/RidgeModel_3.jpeg" width="400px">
 <h4 align="center"> Figure 39</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/RidgModel_4.png" width="200px">
+<img src="images/RidgModel_4.png" width="300px">
 <h4 align="center"> Figure 40</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/RidgeModel_5.jpeg" width="200px">
+<img src="images/RidgeModel_5.jpeg" width="300px">
 <h4 align="center"> Table 2</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/RidgeModel_6.jpeg" width="200px">
+<img src="images/RidgeModel_6.jpeg" width="300px">
 <h4 align="center"> Table 3</h4>
 </p>
                   
