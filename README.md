@@ -316,6 +316,6 @@ As mentioned above, the splitting data into training and testing sets was done u
 The pipeline model is shown in Figure 36. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.exp. 
 </br>
 <p align="center">
-<img src="images/RidgeModel_1.jpeg" width="800px">
+<img src="images/RidgeModel_1.jpeg" width="400px">
 <h4 align="center"> Figure 36</h4>
 </p>
