@@ -293,4 +293,13 @@ Most of the indepent variables, i.e. columns (after treating the nominal categor
 <h4 align="center"> Figure 33</h4>
 </p>
 
-Getting this message is because the dependent variable y (i.e, the target columns: "price") doesn't have sufficient class labels of one of the classes to keep the data splitting ratio equal to test_size. Consequently, I gave up using the StratifiedKFold function. Instead, I did chose to use train_test_split function with all its shortcoming ( not keeping same data ratio of target column in samples) when part of the data is imbalanced.
+Getting this message is because the dependent variable y (i.e, the target columns: "price") doesn't have sufficient class labels of one of the classes to keep the data splitting ratio equal to test_size. Consequently, I gave up using the StratifiedKFold function. Instead, I did chose to use train_test_split function with all its shortcoming (not keeping same data ratio of target column in samples) when part of the data is imbalanced.
+                       
+Since the dependent dataset X contains 144 columns, it was decided to give a try to reduce that number by creating a simple pipeline model, and use the permutation_importance function, and the  filter the result to only leave the columns with the importance greater than 0. As a result, only 138 columns satisfied the aforementioned condition. Although not shown here, doing it help to improve the statistics (MSE and score) in the regression models built later on. The resulting names of the 138 columns are shown below:
+ 
+</br>
+<p align="center">
+<img src="images/permutation.jpeg" width="800px">
+<h4 align="center"> Figure 33</h4>
+</p>                                                                                        
+                                                                                      
