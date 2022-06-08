@@ -279,8 +279,8 @@ As it is observed the columns: "VIN", "id"  were also dropped. The independent d
 
 </br>
 <p align="center">
-<img src="images/Xhisto.png" width="800px">
-<h4 align="center"> Figure 31</h4>
+<img src="images/Xhisto.png" width="1200px" height="600px>
+<h4 align="center"> Figure 32</h4>
 </p>
 </br>
 
