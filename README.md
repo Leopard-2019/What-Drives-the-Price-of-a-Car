@@ -265,6 +265,6 @@ Splitting the dependent variable from the independent variables and assigning th
 </br>
 </br>
 <p align="center">
-<img src="images/splitting.jpeg" width="500px">
+<img src="images/splitting.jpeg" width="800px">
 <h4 align="center"> Figure 29</h4>
 </p>
