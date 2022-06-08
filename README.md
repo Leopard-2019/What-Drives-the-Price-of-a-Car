@@ -73,7 +73,7 @@ Although the data preparation process is not totally completed, more insight int
 <h4 align="center"> Figure 9</h4>
 </p>
 
-<h4>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h4>
+<h3>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h3>
 The presence of outliers in the numerical columns: 'price", "odometer", and "year" (see Figures 10, 12 and 12) indicated by the respective boxplot demands a careful and efective treatment in order to have to continue to the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
 
 </br>
@@ -220,7 +220,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 
 <h4>Treatment of Categorical Features</h4>
 
-<h5>Nominal Features</h5>
+<h3>Nominal Features</h3>
 Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "fuel", "cylinders","type","transmission", "manufacturer", "state", "size", "paint_color", "title_status", "model", and "drive". The Pandas getdummies function to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. It is important to highlight that the column: "model" not encoded, i.e., not used for the rest of the analysis, since it contains 4375 features. Otherwise, it will takes geological ages to do any modelling in my tiny laptop. Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure 27:
 
 </br>
@@ -230,7 +230,7 @@ Nominal features are categorical features that have no numerical importance. Ord
 <h4 align="center"> Figure 27</h4>
 </p>
 
-<h5>Ordinal Features</h5>
+<h3>Ordinal Features</h3>
 The categorical feature "condition" is ordered values, so a numeric value representing the scale can be used. In this case, a scale of 0 - 5 can associate the categories with an order in a list from least to greatest. Creating an OrdinalEncoder with these categories will transform the condition feature mapping each category as:
 
 'salvage': 0
@@ -249,7 +249,7 @@ The make_column_transformer  function is used to apply the transformer to the af
 <h4 align="center"> Figure 28</h4>
 </p>
 
-<h5>Correlation among the original numerical columns: "price", "year", and "odometer"</h5>
+<h3>Correlation among the original numerical columns: "price", "year", and "odometer"</h3>
 A cross-correlation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Heatmap in Figure 29. Consequently, it was decided to drop the column: "odometer".
 
 </br>
@@ -259,7 +259,7 @@ A cross-correlation among the original numerical columns:"price", "year", and "o
 <h4 align="center"> Figure 29</h4>
 </p>
 
-<h5>Splitting the variables</h5>
+<h3>Splitting the variables</h3>
 Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as follows:
 
 </br>
@@ -268,3 +268,5 @@ Splitting the dependent variable from the independent variables and assigning th
 <img src="images/splitting.jpeg" width="800px">
 <h4 align="center"> Figure 29</h4>
 </p>
+
+<h2>Modeling</h2>
