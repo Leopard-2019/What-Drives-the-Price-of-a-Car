@@ -321,6 +321,8 @@ As mentioned above, the splitting data into training and testing sets was done u
 </p>
 
 <h3>Regression Models Built</h3>
+There only 4 regression models tested during the modeling phase: Ridge regression, SequentialFeature selection with Linear Regression, Lasso Rregression, and Ordinarily Least Squares (OLS).
+
 <h4>Ridge regression model</h4>
 The pipeline model is shown in Figure 37. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
                   
@@ -331,7 +333,7 @@ The pipeline model is shown in Figure 37. Please note that the TransformedTarget
 <h4 align="center"> Figure 37</h4>
 </p>
 
-The GridSearchCV function was used to optimized the hyper-parameter alpha tested (see Figure 38), obtaining the following statistical results shown on Figure 39. The differences between the validation test and the predicted by the model are shown  as histogram plot (Figure 40), explaining why the MSE for both the training and validation sets are quite high. Although, the  R^2 score value of 0.73422 is pretty decent. Regarding the regression coefficient obtained, there were 59 greater than 0, 79 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. According to the Ridge Model, the most important factor driving positively the price of a used car is its condition, and the one affecting it most negatively is the transmission of the car is not automatic or manual.
+The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 38), obtaining the following statistical results shown on Figure 39. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 40), explaining why the MSE for both the training and validation sets are quite high. Although, the  R^2 score value of 0.73422 is pretty decent. Regarding the regression coefficient obtained, there were 59 greater than 0, 79 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. According to the Ridge Model, the most important factor driving positively the price of a used car is its condition, and the one affecting it most negatively is the transmission of the car is not automatic or manual.
                   
 </br>
 <p align="center">
@@ -362,4 +364,16 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha tested
 <img src="images/RidgeModel_6.jpeg" width="300px">
 <h4 align="center"> Table 3</h4>
 </p>
-                  
+
+
+<h4>SequentialFeatureSelecyion with Linear Regression model</h4>
+The pipeline model is shown in Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+
+</br>
+</br>
+<p align="center">
+<img src="images/RidgeModel_1.jpeg" width="400px">
+<h4 align="center"> Figure 41</h4>
+</p>
+
+The GridSearchCV function was also used to optimized the hyper-parameter: n_features_to_select  (see Figure 42). The statistical results are shown on Figure 43. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 44), explaining why the MSE for both the training and validation sets are quite high. Although, the  R^2 score value of 0.73422 is pretty decent. Regarding the regression coefficient obtained, there were 59 greater than 0, 79 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. According to the Ridge Model, the most important factor driving positively the price of a used car is its condition, and the one affecting it most negatively is the transmission of the car is not automatic or manual.
