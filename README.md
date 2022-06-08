@@ -366,13 +366,13 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha (see F
 </p>
 
 
-<h4>SequentialFeatureSelecyion with Linear Regression model</h4>
+<h4>SequentialFeatureSelection with Linear Regression model</h4>
 The pipeline model is shown in Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
 
 </br>
 </br>
 <p align="center">
-<img src="images/RidgeModel_1.jpeg" width="400px">
+<img src="images/" width="400px">
 <h4 align="center"> Figure 41</h4>
 </p>
 
