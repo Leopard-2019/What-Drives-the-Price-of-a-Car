@@ -275,7 +275,15 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 31</h4>
 </p>
 
-As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 144 columns and 29250 rows.
+As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 144 columns and 29250 rows. Figure 32 shows the histogram for columns comprising X dataset.
+
+</br>
+<p align="center">
+<img src="images/Xhisto.png" width="800px">
+<h4 align="center"> Figure 31</h4>
+</p>
+</br>
+
 
 <h2>Modeling</h2>
 <h3>Cross-Validation Approach used</h3>
