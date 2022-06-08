@@ -300,6 +300,13 @@ Since the dependent dataset X contains 144 columns, it was decided to give a try
 </br>
 <p align="center">
 <img src="images/permutation.jpeg" width="800px">
-<h4 align="center"> Figure 33</h4>
+<h4 align="center"> Figure 34</h4>
 </p>                                                                                        
-                                                                                      
+
+As mentioned above, the splitting data into training and testing sets was done using the train_test_split function as shown below:
+
+</br>
+<p align="center">
+<img src="images/splittingdata.jpeg" width="800px">
+<h4 align="center"> Figure 35</h4>
+</p>
