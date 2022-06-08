@@ -218,12 +218,6 @@ Once a effective cleaning work has been completed removing most or all of the ou
 
 <h4>Observation:</h4> Certainly, the place to look for  cheapers used cars is Washington DC, and the ones not to go for that are: Arkansas,Tennessee, and South Dakota , in that orders.
 
-</br>
-</br>
-<p align="center">
-<img src="images/boxplotprice&transmission.png">
-<h4 align="center"> Figure 27</h4>
-</p>
 
 <h4>Observation:</h4> it seems that there is not much difference in price among the different transmission.
 
