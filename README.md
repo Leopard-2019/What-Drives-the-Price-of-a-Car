@@ -221,7 +221,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4>Treatment of Categorical Features</h4>
 
 <h3>Nominal Features</h3>
-Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "fuel", "cylinders","type","transmission", "manufacturer", "state", "size", "paint_color", "title_status", "model", and "drive". The Pandas getdummies function to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. It is important to highlight that the column: "model" not encoded, i.e., not used for the rest of the analysis, since it contains 4375 features. Otherwise, it will takes geological ages to do any modelling in my tiny laptop. Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure 27:
+Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "fuel", "cylinders","type","transmission", "manufacturer", "state", "size", "paint_color", "title_status", "model", and "drive". The Pandas getdummies function to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. It is important to highlight that the columns: "model" and "region" were not encoded, i.e., not used for the rest of the analysis, since they contain 4375 and 389 features respectively. Otherwise, it will takes geological ages to do any modelling in my tiny laptop. Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure 27:
 
 </br>
 </br>
@@ -270,11 +270,12 @@ Splitting the dependent variable from the independent variables and assigning th
 </p>
 
 </br>
-</br>
 <p align="center">
 <img src="images/independentdata.jpeg" width="800px">
 <h4 align="center"> Figure 31</h4>
 </p>
+
+As it is observed the columns: "VIN", "id"  were also dropped. 
 
 <h2>Modeling</h2>
 <h3>Cross-Validation Approach used</h3>
