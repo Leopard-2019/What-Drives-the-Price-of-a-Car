@@ -266,7 +266,18 @@ Splitting the dependent variable from the independent variables and assigning th
 </br>
 <p align="center">
 <img src="images/splitting.jpeg" width="800px">
-<h4 align="center"> Figure 29</h4>
+<h4 align="center"> Figure 30</h4>
 </p>
 
 <h2>Modeling</h2>
+<h3>Cross-Validation Approach used</h3>
+Most of the indepent variables, i.e. columns (after treating the nominal categories) are imbalanced dataset. Thus, not all the cross-validation techniques can be used, if reliables training and validation dataset are desired to be built for modeling purpose. Beside, the leave one out cross-validation which is very exhaustive from the computational point of view, there is only one remaining: Stratified K-Fold Cross-Validation. I really tried to test it, but everytime, I was getting the message shown below:
+
+</br>
+</br>
+<p align="center">
+<img src="images/stratafold.jpeg" width="800px">
+<h4 align="center"> Figure 31</h4>
+</p>
+
+Getting this message is because the dependent variable y (i.e, the target columns: "price") doesn't have sufficient class labels of one of the classes to keep the data splitting ratio equal to test_size. Consequently, I gave up using the StratifiedKFold function. Instead, I did chose to use train_test_split function with all its shortcoming (splitting data randomly not considering any distribution) when part of the data is imbalanced.
