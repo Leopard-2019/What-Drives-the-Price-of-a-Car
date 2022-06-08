@@ -258,3 +258,13 @@ A cross-correlation among the original numerical columns:"price", "year", and "o
 <img src="images/corr1.png" width="500px">
 <h4 align="center"> Figure 29</h4>
 </p>
+
+<h5>splitting the variables</h5>
+Splitting the dependent variable from the independent variables and assigning them to y and x respectively was done as follows:
+
+</br>
+</br>
+<p align="center">
+<img src="images/splitting.jpeg" width="500px">
+<h4 align="center"> Figure 29</h4>
+</p>
