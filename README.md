@@ -221,7 +221,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 </br>
 <p align="center">
-<img src="images/boxplotprice&transmission.png">
+<img src="images/">
 <h4 align="center"> Figure 27</h4>
 </p>
 
