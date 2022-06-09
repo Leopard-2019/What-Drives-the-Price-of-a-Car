@@ -318,7 +318,7 @@ The pipeline model is shown in Figure 37. Please note that the TransformedTarget
                   
 </br>
 <p align="center">
-<img src="images/RidgeModel_1.jpeg" width="800px">
+<img src="images/RidgeModel_1.jpeg" width="400px">
 <h4 align="center"> Figure 37</h4>
 </p>
 
@@ -326,7 +326,7 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha (see F
                   
 </br>
 <p align="center">
-<img src="images/RigdeModel_2.jpeg" width="800px">
+<img src="images/RigdeModel_2.jpeg" width="1200px">
 <h4 align="center"> Figure 37</h4>
 </p>
                   
