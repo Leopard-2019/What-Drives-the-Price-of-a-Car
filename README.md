@@ -259,7 +259,7 @@ The make_column_transformer  function is used to apply the transformer to the af
 </p>
 
 <h3>Correlation among the original numerical columns: "price", "year", and "odometer"</h3>
-A cross-correlation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Heatmap in Figure 30. 
+A correlation estimation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Heatmap in Figure 30. 
 
 </br>
 </br>
@@ -267,6 +267,19 @@ A cross-correlation among the original numerical columns:"price", "year", and "o
 <img src="images/corr1.png" width="500px">
 <h4 align="center"> Figure 30</h4>
 </p>
+
+Since, most of the columns are imbalanced values 0 or 1), it was decided to scale the columns: "year", "odometer", and "price" as follow:
+
+</br>
+</br>
+<p align="center">
+<img src="images/divide1.jpeg" width="1200px">
+<img src="images/divide2.jpeg" width="1200px">
+<img src="images/divide3.jpeg" width="1200px">
+<h4 align="center"> Figure 31</h4>
+</p>
+
+
 
 <h3>Splitting the variables</h3>
 Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as follows:
@@ -284,7 +297,8 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 32</h4>
 </p>
 
-As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 145columns and 29250 rows. Figure 33 shows the histogram for columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bar, etc in the hisogram, because there are too many histogram, so I do appreciate the undertanding.
+As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 145 columns and 29250 rows. Figure 33 shows the histogram for columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bar, etc in the hisogram, because there are too many histogram, so I do appreciate the undertanding.
+
 <p align="center">
 <img src="images/" width="1400px" height="600px">
 <h4 align="center">Figure 33</h4>
@@ -293,8 +307,8 @@ As it is observed the columns: "VIN", "id"  were also dropped. The independent d
 
 <h2>Modeling</h2>
 <h3>Cross-Validation Approach used</h3>
-Most of the independent variables, i.e. columns (after treating the nominal categories) are imbalanced data. But, the target variable (column: "price") is continuous, and the input dataset is considered large. Thus,  I decide to use Hold-out based cross-validation. In this technique, the whole dataset is randomly partitioned into a training set and validation set. Using a rule of thumb nearly 70% of the whole dataset is used as a training set and the remaining 30% is used as the validation set.                       
-Since the dependent dataset X contains 145 columns, it was decided to give a try to reduce that number by creating a simple pipeline model, and use the permutation_importance function, and the  filter the result to only leave the columns with the importance greater than 0. As a result, only 138 columns satisfied the aforementioned condition. Although not shown here, doing it help to improve the statistics (MSE and score) in the regression models built later on. The resulting names of the 138 columns are shown below:
+Most of the independent variables, i.e. columns (after treating the nominal categories) are imbalanced data. But, the target variable (column: "price") is continuous, and the input dataset is considered large. Thus,  it was  decided to use Hold-out based cross-validation. In this technique, the whole dataset is randomly partitioned into a training set and validation set. Using a rule of thumb nearly 70% of the whole dataset was used as a training set and the remaining 30% was used as the validation set. However, it was also used the K-Fold Cross-Validation for completness, in order to also compare among the regression models bult.                   
+Since the dependent dataset X contains 145 columns, it was decided to give a try to reduce that number of columns by creating a simple pipeline model, and use the permutation_importance function, and then, filtering the result to only leave the columns with the importance greater than 0. As a result, only 138 columns satisfied the aforementioned condition. Although not shown here, doing it helped to improve the statistics (MSE and R^2 score) in the regression models built later on. The resulting names of the 138 columns are shown below:
  
 </br>
 <p align="center">
@@ -311,7 +325,7 @@ As mentioned above, HoldOut Cross-validation or Train-Test Split was chosen, i.e
 </p>
 
 <h3>Regression Models Built</h3>
-There only 4 regression models tested during the modeling phase: Ridge regression, SequentialFeature selection with Linear Regression, Lasso Rregression, and Ordinarily Least Squares (OLS).
+There were only 4 regression models tested during the modeling phase: Ridge regression, SequentialFeature selection with Linear Regression, Lasso Regression, and Ordinarily Least Squares (OLS).
 
 <h4>Ridge regression model</h4>
 The pipeline model is shown in Figure 37. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
@@ -322,14 +336,25 @@ The pipeline model is shown in Figure 37. Please note that the TransformedTarget
 <h4 align="center"> Figure 37</h4>
 </p>
 
-The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 38), obtaining excellent statistical results  as shown on Figure 39. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 40). Although, the  R^2 score value of 0.73422 is pretty decent. Regarding the regression coefficient obtained, there were 59 greater than 0, 79 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. According to the Ridge Model, the most important factor driving positively the price of a used car is its condition, although, I would say hat the year of the car can not be ignored, since its coefficent is low compared to those. because its value is relative high.The one affecting it most negatively is the transmission of the car is not automatic or manual.
+The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 38). the best alpha value estimated was 0.1. Also, excellent statistical results were obtained as shown on Figure 39. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 40).Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. 
                   
 </br>
 <p align="center">
 <img src="images/RigdeModel_2.jpeg" width="1200px">
-<h4 align="center"> Figure 37</h4>
+<h4 align="center"> Figure 38</h4>
 </p>
-                  
+ 
+</br>
+<p align="center">
+<img src="images/" width="1200px">
+<h4 align="center"> Figure 39</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/" width="1200px">
+<h4 align="center"> Figure 40</h4>
+</p>
 
 
 
@@ -344,4 +369,20 @@ The pipeline model is shown in Figure 41. Please note that the TransformedTarget
 
 
 
-The GridSearchCV function was also used to optimized the hyper-parameter: n_features_to_select  (see Figure 42). The statistical results are shown on Figure 43. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 44), explaining why the MSE for both the training and validation sets are quite high. Although, the  R^2 score value of 0.73422 is pretty decent. Regarding the regression coefficient obtained, there were 59 greater than 0, 79 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. According to the Ridge Model, the most important factor driving positively the price of a used car is its condition, and the one affecting it most negatively is the transmission of the car is not automatic or manual.
+The GridSearchCV function was also used to optimized the hyper-parameter: n_features_to_select (see Figure 42). the best n_features value estimated was 10. Excellent statistical results were obtained as shown on Figure 43. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 44). Table 4 shows the regression coefficient obtained for the 10 features selected, there are 6 greater than 0, and 4 less than 0. 
+
+<h4>Lasso Regression</h4>
+The pipeline model is shown in Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+
+
+
+The GridSearchCV function was also used to optimized the hyper-parameter: n_features_to_select (see Figure 42). the best n_features value estimated was 10. Excellent statistical results were obtained as shown on Figure 43. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 44). Table 4 shows the regression coefficient obtained for the 10 features selected, there are 6 greater than 0, and 4 less than 0.
+
+<h4>Ordinarily Least Squares (OLS)</h4>
+The pipeline model is shown in Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+
+
+
+The GridSearchCV function was also used to optimized the hyper-parameter: n_features_to_select (see Figure 42). the best n_features value estimated was 10. Excellent statistical results were obtained as shown on Figure 43. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 44). Table 4 shows the regression coefficient obtained for the 10 features selected, there are 6 greater than 0, and 4 less than 0.
+
+
