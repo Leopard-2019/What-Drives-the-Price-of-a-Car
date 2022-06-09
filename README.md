@@ -279,28 +279,26 @@ Since, most of the columns are imbalanced values 0 or 1), it was decided to scal
 <h4 align="center"> Figure 31</h4>
 </p>
 
-
-
 <h3>Splitting the variables</h3>
 Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as follows:
 
 </br>
 </br>
 <p align="center">
-<img src="images/" width="800px">
-<h4 align="center"> Figure 31</h4>
+<img src="images/independentdata.jpeg" width="1200px">
+<h4 align="center"> Figure 32</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/" width="800px">
-<h4 align="center"> Figure 32</h4>
+<img src="images/independent_2.jpeg" width="1200px">
+<h4 align="center"> Figure 33</h4>
 </p>
 
-As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 145 columns and 29250 rows. Figure 33 shows the histogram for columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bar, etc in the hisogram, because there are too many histogram, so I do appreciate the undertanding.
+As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 145 columns and 29250 rows. Figure 33 shows the histogram for columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bar, etc in the histogram, because there are too many histogram, so I do appreciate the undertanding.
 
 <p align="center">
-<img src="images/" width="1400px" height="600px">
+<img src="images/Xhisto_2.png" width="1400px" height="600px">
 <h4 align="center">Figure 33</h4>
 </p>
 </br>
