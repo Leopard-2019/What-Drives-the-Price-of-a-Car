@@ -274,13 +274,13 @@ Splitting the dependent variable from the independent variables and assigning th
 </br>
 </br>
 <p align="center">
-<img src="images/splitting.jpeg" width="800px">
+<img src="images/" width="800px">
 <h4 align="center"> Figure 31</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/independentdata.jpeg" width="800px">
+<img src="images/" width="800px">
 <h4 align="center"> Figure 32</h4>
 </p>
 
