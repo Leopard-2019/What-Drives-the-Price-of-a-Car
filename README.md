@@ -294,7 +294,7 @@ As it is observed the columns: "VIN", "id"  were also dropped. The independent d
 <h2>Modeling</h2>
 <h3>Cross-Validation Approach used</h3>
 Most of the independent variables, i.e. columns (after treating the nominal categories) are imbalanced data. But, the target variable (column: "price") is continuous, and the input dataset is considered large. Thus,  I decide to use Hold-out based cross-validation. In this technique, the whole dataset is randomly partitioned into a training set and validation set. Using a rule of thumb nearly 70% of the whole dataset is used as a training set and the remaining 30% is used as the validation set.                       
-Since the dependent dataset X contains 144 columns, it was decided to give a try to reduce that number by creating a simple pipeline model, and use the permutation_importance function, and the  filter the result to only leave the columns with the importance greater than 0. As a result, only 138 columns satisfied the aforementioned condition. Although not shown here, doing it help to improve the statistics (MSE and score) in the regression models built later on. The resulting names of the 138 columns are shown below:
+Since the dependent dataset X contains 145 columns, it was decided to give a try to reduce that number by creating a simple pipeline model, and use the permutation_importance function, and the  filter the result to only leave the columns with the importance greater than 0. As a result, only 138 columns satisfied the aforementioned condition. Although not shown here, doing it help to improve the statistics (MSE and score) in the regression models built later on. The resulting names of the 138 columns are shown below:
  
 </br>
 <p align="center">
