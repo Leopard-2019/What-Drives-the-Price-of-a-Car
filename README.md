@@ -273,9 +273,9 @@ Since, most of the columns are imbalanced values 0 or 1), it was decided to scal
 </br>
 </br>
 <p align="center">
-<img src="images/divide1.jpeg" width="800px">
-<img src="images/divide2.jpeg" width="800px">
-<img src="images/divide3.jpeg" width="800px">
+<img src="images/divide1.jpeg" width="1200px">
+<img src="images/divide2.jpeg" width="1200px">
+<img src="images/divide3.jpeg" width="1200px">
 <h4 align="center"> Figure 31</h4>
 </p>
 
