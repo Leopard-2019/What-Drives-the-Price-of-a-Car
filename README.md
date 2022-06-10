@@ -222,7 +222,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 </br>
 <p align="center">
 <img src="images/boxplotprice&transmission.png">
-<h4 align="center"> Figure 26</h4>
+<h4 align="center"> Figure 27</h4>
 </p>
 
 <h4>Observation:</h4> it seems that there is not much difference in price among the different transmission types.
@@ -235,7 +235,7 @@ Nominal features are categorical features that have no numerical importance. Ord
 </br>
 </br>
 <p align="center">
-<img src="images/nominal.jpeg" width="800px">
+<img src="images/nominal.jpe" width="800px">
 <h4 align="center"> Figure 28</h4>
 </p>
 
@@ -258,7 +258,7 @@ The make_column_transformer  function is used to apply the transformer to the af
 <h4 align="center"> Figure 29</h4>
 </p>
 
-Since, most of the columns are imbalanced values 0 or 1), it was decided to scale the columns: "year", "odometer", and "price" as follow:
+Since, most of the columns are imbalanced values (0 or 1), it was decided to scale the columns: "year", "odometer", and "price" as follow:
 
 </br>
 </br>
@@ -266,7 +266,7 @@ Since, most of the columns are imbalanced values 0 or 1), it was decided to scal
 <img src="images/divide1.jpeg" width="1200px">
 <img src="images/divide2.jpeg" width="1200px">
 <img src="images/divide3.jpeg" width="1200px">
-<h4 align="center"> Figure 31</h4>
+<h4 align="center"> Figure 30</h4>
 </p>
 
 <h3>Splitting the variables</h3>
@@ -276,16 +276,16 @@ Splitting the dependent variable from the independent variables and assigning th
 </br>
 <p align="center">
 <img src="images/independentdata.jpeg" width="1200px">
-<h4 align="center"> Figure 32</h4>
+<h4 align="center"> Figure 31</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/independent_2.jpeg" width="1200px">
-<h4 align="center"> Figure 33</h4>
+<h4 align="center"> Figure 32</h4>
 </p>
 
-As it is observed the columns: "VIN", "id"  were also dropped. The independent dataset is comprised by 145 columns and 29250 rows. Figure 33 shows the histogram for columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bar, etc in the histogram, because there are too many histogram, so I do appreciate the undertanding.
+As it is observed the columns: "VIN", "id"  were also dropped. The independent variables dataset is comprised by 145 columns and 29250 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram, so it is appreciated the undertanding.
 
 <p align="center">
 <img src="images/Xhisto_2.png" width="1400px" height="600px">
@@ -295,53 +295,65 @@ As it is observed the columns: "VIN", "id"  were also dropped. The independent d
 
 <h2>Modeling</h2>
 <h3>Cross-Validation Approach used</h3>
-Most of the independent variables, i.e. columns (after treating the nominal categories) are imbalanced data. But, the target variable (column: "price") is continuous, and the input dataset is considered large. Thus,  it was  decided to use Hold-out based cross-validation. In this technique, the whole dataset is randomly partitioned into a training set and validation set. Using a rule of thumb nearly 70% of the whole dataset was used as a training set and the remaining 30% was used as the validation set. However, it was also used the K-Fold Cross-Validation for completness, in order to also compare among the regression models bult. A k=5 was chosen, which is recommended for large dataset.                
-Since the dependent dataset X contains 145 columns, it was decided to give a try to reduce that number of columns by creating a simple pipeline model, and use the permutation_importance function, and then, filtering the result to only leave the columns with the importance greater than 0. As a result, only 138 columns satisfied the aforementioned condition. Although not shown here, doing it helped to improve the statistics (MSE and R^2 score) in the regression models built later on. The resulting names of the 138 columns are shown below:
+Most of the independent variables, i.e. columns (after treating the nominal categories) are imbalanced data. But, the target variable (column: "price") is continuous, and the final dataset assembled is considered large. Thus,  it was  decided to use Hold-out based cross-validation method. In this technique, the whole dataset is randomly partitioned into a training set and validation set. Using a rule of thumb 70% of the whole dataset was used as a training set and the remaining 30% was used as the validation set. However, it was also used the K-Fold Cross-Validation for completness, in order to also compare among the regression models bult in term of their metrics. In this last technique, a k=5 was chosen, which is recommended for large dataset.          
+Since the dependent dataset X contains 145 columns, it was decided to give a try to reduce that number of columns by creating a simple pipeline model, and use the permutation_importance function, and then, filtering the result to only leave the columns with the importance greater than 0. As a result, only 138 columns satisfied the aforementioned condition. It helped to improve the statistics (MSE and R^2 score) in the regression models built later on. The resulting names of the 138 columns are shown below:
  
 </br>
 <p align="center">
 <img src="images/permutation.jpeg" width="800px">
-<h4 align="center"> Figure 35</h4>
+<h4 align="center"> Figure 34</h4>
 </p>                                                                                        
 
-As mentioned above, HoldOut Cross-validation or Train-Test Split was chosen, i.e., the splitting data into training and testing sets was done using the train_test_split function as shown below:
+As mentioned above, HoldOut Cross-validation, i.e,  he splitting data into training and validation sets was done using the train_test_split function as shown below:
 
 </br>
 <p align="center">
 <img src="images/splittingdata.jpeg" width="800px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 35</h4>
 </p>
 
 <h3>Regression Models Built</h3>
 There were only 4 regression models tested during the modeling phase: Ridge regression, SequentialFeature selection with Linear Regression, Lasso Regression, and Ordinarily Least Squares (OLS).
 
 <h4>Ridge regression model</h4>
-The pipeline model is shown in Figure 37. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+The pipeline model is shown in Figure 36. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
                   
 </br>
 <p align="center">
 <img src="images/RidgeModel_1.jpeg" width="400px">
-<h4 align="center"> Figure 37</h4>
+<h4 align="center"> Figure 36</h4>
 </p>
 
-The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 38). the best alpha value estimated was 0.1. Also, excellent statistical results were obtained as shown on Figure 39. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 40).Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. 
+The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 37). the best alpha value estimated was 0.1. Also, excellent statistical results were obtained as shown on Figure 38. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 39).Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. 
                   
 </br>
 <p align="center">
 <img src="images/RigdeModel_2.jpeg" width="1200px">
-<h4 align="center"> Figure 38</h4>
+<h4 align="center"> Figure 37</h4>
 </p>
  
 </br>
 <p align="center">
-<img src="images/" width="1200px">
+<img src="images/RidgeModel3.jpeg" width="1200px">
+<h4 align="center"> Figure 38</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/RidgeModel_4.png" width="1200px">
 <h4 align="center"> Figure 39</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/" width="1200px">
-<h4 align="center"> Figure 40</h4>
+<img src="images/RidgeModel_5.jpeg" width="1200px">
+<h4 align="center"> Table 2</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/RidgeModel_6.jpeg" width="1200px">
+<h4 align="center"> Table 3</h4>
 </p>
 
 
