@@ -235,7 +235,7 @@ Nominal features are categorical features that have no numerical importance. Ord
 </br>
 </br>
 <p align="center">
-<img src="images/" width="800px">
+<img src="images/nominal.jpeg" width="800px">
 <h4 align="center"> Figure 28</h4>
 </p>
 
