@@ -334,7 +334,7 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha (see F
  
 </br>
 <p align="center">
-<img src="images/RidgeModel3.jpeg" width="1200px">
+<img src="images/" width="1200px">
 <h4 align="center"> Figure 38</h4>
 </p>
 
