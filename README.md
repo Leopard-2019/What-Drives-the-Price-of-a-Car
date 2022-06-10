@@ -316,7 +316,7 @@ As mentioned above, HoldOut Cross-validation, i.e,  he splitting data into train
 There were only 4 regression models tested during the modeling phase: Ridge regression, SequentialFeature selection with Linear Regression, Lasso Regression, and Ordinarily Least Squares (OLS).
 
 <h4>Ridge regression model</h4>
-The pipeline model is shown in Figure 36. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+The pipeline model is shown on Figure 36. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
                   
 </br>
 <p align="center">
@@ -363,14 +363,17 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha (see F
 </p>
 
 <h4>SequentialFeatureSelection with Linear Regression model</h4>
-The pipeline model is shown in Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+The pipeline model is shown on Figure 341.The TransformedTargetRegressor function was also used for  same non-linear transformation to the target y.
 
+</br>
+<p align="center">
+<img src="images/Model2_1.jpeg" width="400px">
+<h4 align="center"> Figure 36</h4>
+</p>
 
-
-The GridSearchCV function was also used to optimized the hyper-parameter: n_features_to_select (see Figure 42). the best n_features value estimated was 10. Excellent statistical results were obtained as shown on Figure 43. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 44). Table 4 shows the regression coefficient obtained for the 10 features selected, there are 6 greater than 0, and 4 less than 0. 
 
 <h4>Lasso Regression</h4>
-The pipeline model is shown in Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+The pipeline model is shown on Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
 
 
 
