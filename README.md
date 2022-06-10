@@ -324,7 +324,7 @@ The pipeline model is shown in Figure 36. Please note that the TransformedTarget
 <h4 align="center"> Figure 36</h4>
 </p>
 
-The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 37). the best alpha value estimated was 0.1. Also, excellent statistical results were obtained as shown on Figure 38. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 39). As mentioned before, the K-fold cross-validation technique was also used to estimate metrics, in this case  "accuracy" and "R^2" were chosen as a score (see Figure 40). Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. 
+The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 37). the best alpha value estimated was 0.1. Also, excellent metrics results were obtained as shown on Figure 38. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 39). As mentioned before, the K-fold cross-validation technique was also used to estimate metrics, in this case  "accuracy" and "R^2" were chosen as a score (see Figure 40). Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. 
                   
 </br>
 <p align="center">
@@ -334,7 +334,7 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha (see F
  
 </br>
 <p align="center">
-<img src="images/RidgeModel3.jpeg" width="250px">
+<img src="images/RidgeModel3.jpeg" width="1200px">
 <h4 align="center"> Figure 38</h4>
 </p>
 
