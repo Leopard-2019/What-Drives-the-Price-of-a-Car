@@ -225,7 +225,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 26</h4>
 </p>
 
-<h4>Observation:</h4> it seems that there is not much difference in price among the different transmission.
+<h4>Observation:</h4> it seems that there is not much difference in price among the different transmission types.
 
 <h4>Treatment of Categorical Features</h4>
 
@@ -256,16 +256,6 @@ The make_column_transformer  function is used to apply the transformer to the af
 <p align="center">
 <img src="images/ordinal.jpeg" width="800px">
 <h4 align="center"> Figure 29</h4>
-</p>
-
-<h3>Correlation among the original numerical columns: "price", "year", and "odometer"</h3>
-A correlation estimation among the original numerical columns:"price", "year", and "odometer" was carried out. it indicate that there is positive, and correlation greater than 0.50 between the columns: "year" and "price". Conversely, a negative correlation was found between the columns: "odometer", and "price" as shown on Heatmap in Figure 30. 
-
-</br>
-</br>
-<p align="center">
-<img src="images/corr1.png" width="500px">
-<h4 align="center"> Figure 30</h4>
 </p>
 
 Since, most of the columns are imbalanced values 0 or 1), it was decided to scale the columns: "year", "odometer", and "price" as follow:
