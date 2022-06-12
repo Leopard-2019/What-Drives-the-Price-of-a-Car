@@ -393,7 +393,7 @@ The GridSearchCV function was used to optimized the hyper-parameter n_features_t
 
 </br>
 <p align="center">
-<img src="images/" width="400px">
+<img src="images/Model2_6.jpeg" width="400px">
 <h4 align="center"> Figure 44</h4>
 </p>
 
