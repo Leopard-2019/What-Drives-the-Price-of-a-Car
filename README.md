@@ -484,3 +484,5 @@ There was not need to use  GridSearchCV function, since there was not hyperparam
 </p>
 </br>
 
+<h2>Evaluation</h2>
+The metrics estimated in each of the regression models are compared, first, the metrics by using the hold-out cross-validation technique, then the metrics estimated using the K-fold cross-validation tecnique as shown on Figure55 and 56 respectively.
