@@ -466,12 +466,3 @@ There was not need to use  GridSearchCV function, since there was not hyperparam
 <h4 align="center"> Figure 52</h4>
 </p>
 
-</br>
-<p align="center">
-<img src="images/Model4_2.png" width="350px">
-<h4 align="center"> Figure 53</h4>
-</p>
-
-
-
-
