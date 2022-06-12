@@ -450,14 +450,38 @@ The GridSearchCV function was used to optimized the hyper-parameter alpha (see F
 
 
 <h4>Ordinarily Least Squares (OLS)</h4>
-The pipeline model is shown in Figure 41. Please note that the TransformedTargetRegressor function is used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
+The pipeline model is shown in Figure 51. Please note that the TransformedTargetRegressor function is again used to apply a non-linear transformation to the target y. This transformation was given as a function and its inverse such as np.log and np.expm1. 
 
 </br>
 <p align="center">
 <img src="images/Model4_1.jpeg" width="400px">
-<h4 align="center"> Figure 41</h4>
+<h4 align="center"> Figure 51</h4>
 </p>
 
-The GridSearchCV function was also used to optimized the hyper-parameter: n_features_to_select (see Figure 42). the best n_features value estimated was 10. Excellent statistical results were obtained as shown on Figure 43. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 44). Table 4 shows the regression coefficient obtained for the 10 features selected, there are 6 greater than 0, and 4 less than 0.
+There was not need to use  GridSearchCV function, since there was not hyperparamter to be estimated, i.e. optimized. The metrics results are  shown on Figure 52. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 53). As done in previous regression model built, the K-fold cross-validation technique was also try to be used, but unfortunately,  an error message eror was kept showing up everytime, it was tried to apply this cross-validation technique in this particular regression model (see Figure 54). The non-zero regression coefficients are shown on Table 5. The 10 most important coefficients contributing positively to the used car price are shown as table 6.
+
+</br>
+<p align="center">
+<img src="images/Model4_2.jpeg" width="400px">
+<h4 align="center"> Figure 52</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/Model4_2.png" width="350px">
+<h4 align="center"> Figure 49</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/Model4_6.jpeg" width="1200px">
+<h4 align="center"> Figure 50</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/Model4_4.jpeg" width="250px">
+<h4 align="center"> Table 5</h4>
+</p>
 
 
