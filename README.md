@@ -1,5 +1,8 @@
 <h1>What Drives the Price of a Car?</h1>
-This python application will explore a dataset containing information on 3 millions used cars in order to determine which factors make a car more or less expensive. The current CRISP-DM Process Model for Data Mining (see Figure 1) will be followed.
+This python application using jupyter notebook explored a dataset containing information on 3 millions used cars in order to determine which factors make a car more or less expensive. 
+
+
+The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 
 </br>
 </br>
@@ -13,7 +16,7 @@ This python application will explore a dataset containing information on 3 milli
 The Business task is to identify which factors make a car more or less expensive by using python & its libraries in jupyter notebook. This application will allow not only dealer tagging a price for a particular car that will be on the market, but also potential buyer to negociate a fair price for any particular car she/he/they is/are interested in.
 
 <h2>Data Understanding</h2>
-The dataset (vehicles.csv) given is in .csv format.It consists of 18 columns and 426880 rows as shown below (see Figure 2). The target columns is "price" which is numerical. there are only two more columns numerical: "odometer" and "year", i.e., the rest of the columns are categorical (ordinal and nominal). Consequently, most of the dataset provided will be imbalanced before entering the modeling phase. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed. It is thought that in order to provide  more insight into the aforementioned dataset, a data preparation, i.e, data cleaning process needs to be done first.
+The dataset (vehicles.csv) given is in .csv format.It consisted of 18 columns and 426880 rows as shown below (see Figure 2). The target columns is "price" which is numerical. there were only two more columns numerical: "odometer" and "year", i.e., the rest of the columns were categorical (ordinal and nominal). Consequently, most of the dataset provided will be imbalanced before entering the modeling phase. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed. It is thought that in order to provide  more insight into the aforementioned dataset, a data preparation, i.e, data cleaning process needs to be done first.
 
 </br>
 </br>
@@ -324,7 +327,7 @@ The pipeline model is shown on Figure 36. Please note that the TransformedTarget
 <h4 align="center"> Figure 36</h4>
 </p>
 
-The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 37). the best alpha value estimated was 0.1. The metrics results are  shown on Figure 38. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 39). As mentioned before, the K-fold cross-validation technique was also used to estimate metrics, in this case  "neg_mean_squared_error" and "R^2" were chosen as a score (see Figure 40). Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown as table 2 and 3 respectively. 
+The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 37). the best alpha value estimated was 0.1. The metrics results are  shown on Figure 38. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 39). As mentioned before, the K-fold cross-validation technique was also used to estimate metrics, in this case  "neg_mean_squared_error" and "R^2" were chosen as a score (see Figure 40). Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. 
                   
 </br>
 <p align="center">
@@ -529,6 +532,6 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 <p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values, and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".</p>
 <p>2. The best regression model is the Ridge based on the metric estimated using both the hold-out and K-Fold cross-validation methods. An excelente R^2 score (a goodness-of-fit measure for linear regression models) of 0.82 was obtained, i.e., indicating how well this regression model fits the validation dataset.</p>
 <p> 3. It is important to highlight that the numerical variables "price", "odometer", and "year" were divided by 10000, 100000, and 1000 respectively, before initiating the regression modeling, since the rest of the columns have values 0 and 1, but the variable "conditon which is ordinal (i.e., integer values from 0 to 5). This step was very important to greatly improved the metrics,etc  of the regression models tested.</p>
-<p> 4. The three most important features were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model.</p>
+<p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
 <p> 5. There were only three numerical variables in the initial dataset, the rest were categoricals that were converted to values 0 and 1, but just one ordinal (integer values ranging from 0 to 5).  Therefore, there were way too many variables with values 0 and 1  to be used in the modeling phase, limiting at some extend some options that could have been used to improve the prediction, such as the use of polynomial features with degree greater than 1. It took forever even for degree equal to 2. A possible solution is to drastically limit the number of variables into the regression modeling by using the final permutation_importance results obtained at the end of this study.</p>
 <p> 6. It is thought that the number of features could be reduced by applying PCA, and some clustering algorithm, making sure that removing a given feature, the clustering results are not affected.</p>
