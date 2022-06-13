@@ -465,7 +465,7 @@ There was not need to use  GridSearchCV function, since there was not hyperparam
 
 </br>
 <p align="center">
-<img src="images/Model4_2.jpeg" width="400px">
+<img src="images/Model4_2.jpeg" width="350px">
 <h4 align="center"> Figure 52</h4>
 </p>
 
