@@ -1,6 +1,7 @@
 <h1>What Drives the Price of a Car?</h1>
 This python application using jupyter notebook explored a dataset containing information on 3 millions used cars in order to determine which factors make a car more or less expensive. 
 
+Jupiter Notebook used]()
 
 The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 
