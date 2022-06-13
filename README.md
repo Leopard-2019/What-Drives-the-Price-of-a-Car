@@ -485,4 +485,38 @@ There was not need to use  GridSearchCV function, since there was not hyperparam
 </br>
 
 <h2>Evaluation</h2>
-The metrics estimated in each of the regression models are compared, first, the metrics by using the hold-out cross-validation technique, then the metrics estimated using the K-fold cross-validation tecnique as shown on Figure55 and 56 respectively.
+The MSE's and R^2 score metrics estimated in the different regression models using the hold-out cross-validation technique are show on Figure 55 and 56. As, it is observed, the lowest MSE and highest R^2 score are basically shared between the Ridge and OLS regression Model, however,  it is thought that the regression coefficients obtained in the Ridge Model look more reasonable, plus the OLS method failed when the F-Fold cross-validation method was intended to be applied as observed on Figure 57 and 58. Consequently, the Ridge regression model was chosen as the best, i.e. recommended to make prediction on the price of the used cars.
+
+</br>
+<p align="center">
+<img src="images/MSE_1.png" width="400px">
+<h4 align="center"> Figure 55</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/MSE_2.png" width="350px">
+<h4 align="center"> Figure 56</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/R2Score_3.png" width="1200px">
+<h4 align="center"> Figure 57</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/R2Score_4.pngg" width="250px">
+<h4 align="center"> Figure 58</h4>
+</p>
+</br>
+
+The variables that have the biggest impact on predicting the price car can be estimated using the permutuation_importance function. This one was applied using the validation data from the  hold-out cross-validation, and the Ridge as a regression model. Figure 59 shows the results for the 10 most important variables. In the aforementioned picture, the most important feature was gas, which is a feature of the fuel column.
+
+</br>
+<p align="center">
+<img src="images/permu_ridge.jpeg" width="250px">
+<h4 align="center"> Figure 59</h4>
+</p>
+</br>
