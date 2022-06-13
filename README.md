@@ -3,7 +3,7 @@ This python application using jupyter notebook explored a dataset containing inf
 
 [Jupiter Notebook used](https://github.com/Leopard-2019/What-Drives-the-Price-of-a-Car/blob/main/notebook/PracticalApplicationAssignment_11_1-Copy1.ipynb)
 
-The current CRISP-DM Process Model for Data Mining (see Figure 1) will be followed.
+The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 
 </br>
 </br>
@@ -17,7 +17,7 @@ The current CRISP-DM Process Model for Data Mining (see Figure 1) will be follow
 The Business task is to identify which factors make a car more or less expensive by using python & its libraries in jupyter notebook. This application will allow not only dealer tagging a price for a particular car that will be on the market, but also potential buyer to negociate a fair price for any particular car she/he/they is/are interested in.
 
 <h2>Data Understanding</h2>
-The dataset (vehicles.csv) given is in .csv format.It consists of 18 columns and 426880 rows as shown below (see Figure 2). The target columns is "price" which is numerical. there are only two more columns numerical: "odometer" and "year", i.e., the rest of the columns are categorical (ordinal and nominal). Consequently, most of the dataset provided will be imbalanced before entering the modeling phase. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed. It is thought that in order to provide  more insight into the aforementioned dataset, a data preparation, i.e, data cleaning process needs to be done first.
+The dataset (vehicles.csv) given is in .csv format.It consisted of 18 columns and 426880 rows as shown below (see Figure 2). The target columns is "price" which is numerical. there were only two more columns numerical: "odometer" and "year", i.e., the rest of the columns were categorical (ordinal and nominal). Consequently, most of the dataset provided will be imbalanced before entering the modeling phase. All the columns, but "region", "price", and "state" contain a bunch of "NaN" values. Duplicates were not observed. It is thought that in order to provide  more insight into the aforementioned dataset, a data preparation, i.e, data cleaning process needs to be done first.
 
 </br>
 </br>
