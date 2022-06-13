@@ -526,7 +526,9 @@ The variables that have the biggest impact on predicting the price car can be es
 The code was written in Python, and it is available in a Jupyter Notebook (it can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusion & Recomendation</h2>
-* The final dataset, after cleaning, removing outliers,  using the pd.get_dummies, and the OrdinalEncoder on categorical (ordinal and nominal), and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".
-* The best regression model is the Ridge based on the metric estimated using both the hold-oult and K-Fold cross-validation techniques.
-* it is important to highlight that the numerical variables price, odometer, and year were divided by 10000, 100000, and 1000 respectively, before initiating the regression modeling.
-* The most important feature driving the price of a used car is the gas according to the permutation_importance function using the the hold-out cross-validation and Ridge regression model.
+1. The final dataset, after cleaning, removing outliers,  conevrting the categoricals data in 0 and 1 values, and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".
+2. The best regression model is the Ridge based on the metric estimated using both the hold-out and K-Fold cross-validation techniques.
+3. It is important to highlight that the numerical variables price, odometer, and year were divided by 10000, 100000, and 1000 respectively, before initiating the regression modeling, since the rest of the columns have values 0 and 1. This step was very important to greatly improved the metrics of the regression model tested.
+4. The most important feature driving the price of a used car is the "gas"  according to the permutation_importance function using the the hold-out cross-validation and Ridge regression model.
+5. There were only three numerical variables in the initial dataset, the rest were categoricals that were converted to values 0 and 1.  Therefore, there were way too many variables with values 0 and 1  to be used in the modeling phase, limiting at some extend some options that could have been to improve the prediction, such as the use of polynomial features with degree greater than 1. It took forever even for degree equal to 2. A possible solution is to drastically limit the number of variables into the regression modeling by using the final permutation_importance results obtained at the end of this study. 
+6. It is thought that the number of feature could be reduced by applying PCA, and some clustering algorithm, making sure that removing a given feature, the clustering results are not affected.
