@@ -523,7 +523,7 @@ The variables that have the biggest impact on predicting the price car can be es
 </br>
 
 <h2>Deployment</h2>
-The code was written in Python, and it is available in a Jupyter Notebook (it can be accessed in the link posted at the beginning of this document.
+The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusion & Recomendation</h2>
 <p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values, and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".</p>
