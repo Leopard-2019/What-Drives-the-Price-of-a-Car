@@ -489,7 +489,7 @@ The MSE's and R^2 score metrics estimated in the different regression models usi
 
 </br>
 <p align="center">
-<img src="images/" width="500px">
+<img src="images/MSE_1.png" width="500px">
 <h4 align="center"> Figure 55</h4>
 </p>
 
