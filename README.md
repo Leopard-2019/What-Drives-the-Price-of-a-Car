@@ -487,11 +487,7 @@ There was not need to use  GridSearchCV function, since there was not hyperparam
 <h2>Evaluation</h2>
 The MSE's and R^2 score metrics estimated in the different regression models using the hold-out cross-validation technique are show on Figure 55 and 56. As, it is observed, the lowest MSE and highest R^2 score are basically shared between the Ridge and OLS regression Model, however,  it is thought that the regression coefficients obtained in the Ridge Model look more reasonable, plus the OLS method failed when the F-Fold cross-validation method was intended to be applied as observed on Figure 57 and 58. Consequently, the Ridge regression model was chosen as the best, i.e. recommended to make prediction on the price of the used cars.
 
-</br>
-<p align="center">
-<img src="images/MSE_1.png" width="500px">
-<h4 align="center"> Figure 55</h4>
-</p>
+
 
 </br>
 <p align="center">
