@@ -526,7 +526,7 @@ The variables that have the biggest impact on predicting the price car can be es
 The code was written in Python, and it is available in a Jupyter Notebook (it can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusion & Recomendation</h2>
-<p>1. The final dataset, after cleaning, removing outliers,  conevrting the categoricals data in 0 and 1 values, and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".</p>
+<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values, and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".</p>
 <p>2. The best regression model is the Ridge based on the metric estimated using both the hold-out and K-Fold cross-validation techniques.</p>
 <p> 3.It is important to highlight that the numerical variables price, odometer, and year were divided by 10000, 100000, and 1000 respectively, before initiating the regression modeling, since the rest of the columns have values 0 and 1. This step was very important to greatly improved the metrics of the regression model tested.</p>
 <p> 4.The most important feature driving the price of a used car is the "gas"  according to the permutation_importance function using the the hold-out cross-validation and Ridge regression model.</p>
