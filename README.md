@@ -74,7 +74,7 @@ Although the data preparation process is not totally completed, more insight int
 </p>
 
 <h3>Treatment of Outliers in Numerical Columns: "price", "odometer", and "year"</h3>
-The presence of outliers in the numerical columns: 'price", "odometer", and "year" (see Figures 10, 12 and 12) indicated by the respective boxplot demands a careful and efective treatment in order to have to continue to the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
+The presence of outliers in the numerical columns: 'price", "odometer", and "year" (see Figures 10, 12 and 12) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
 
 </br>
 </br>
@@ -97,7 +97,7 @@ The presence of outliers in the numerical columns: 'price", "odometer", and "yea
 <h4 align="center"> Figure 12</h4>
 </p>
 
-Two passes were applied to the aforementioned columns in order to remove the outliers. Before applying these two passes, values equal to 0 and 1 were removed from the column "price". The first pass consisted on applying the well known Inter quartile range (IQR) method, and the second passes consisted on appyling the DBSCAN ("Density-Based Spatial Clustering of Applications with Noise") method. Figure 13, 14, and 15 shows the final results after applying those two methods to remove the outliers. As it can be observed, the two passes were very effective, i.e., removing the majority of the outliers if any left. as an additional comments, the target column "price" shown a distribution skewed to the right, i.e, its logarithm version was used during the regression modeling by using the TransformedTargetRegressor tool.
+Two passes were applied to the aforementioned columns in order to remove the outliers. Before applying these two passes, values equal to 0 and 1 were removed from the column "price". The first pass consisted on applying the well known Inter quartile range (IQR) method, and the second passes consisted on appyling the DBSCAN ("Density-Based Spatial Clustering of Applications with Noise") method. Figure 13, 14, and 15 shows the final results after applying those two methods to remove the outliers. As it can be observed, the two passes were very effective, i.e., removing the majority of the outliers if any left. As an additional comments, the target column "price" shows a distribution skewed to the right, i.e, its logarithm version was used during the regression modeling by using the TransformedTargetRegressor tool.
 
 </br>
 </br>
@@ -128,7 +128,7 @@ Table 1 shows the final statistics of the target column "price":
 <h4 align="center"> Figure 16</h4>
 </p>
 
-Once a effective cleaning work has been completed removing most or all of the outliers in the target column "price", boxplot "price" vs. the rest of the columns can be built as follows:
+Once an effective cleaning work has been completed, including removing most or all of the outliers. A boxplot "price" vs. the rest of the columns can be built & analyized as follows:
 
 </br>
 <p align="center">
@@ -216,7 +216,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4 align="center"> Figure 26</h4>
 </p>
 
-<h4>Observation:</h4> Certainly, the place to look for  cheapers used cars is Washington DC, and the ones not to go for that are: Arkansas,Tennessee, and South Dakota , in that orders.
+<h4>Observation:</h4> Certainly, the place to look for  cheapers used cars is Washington DC, and the ones not to go for that are: Arkansas,Tennessee, and South Dakota , in that order.
 
 </br>
 </br>
@@ -230,7 +230,7 @@ Once a effective cleaning work has been completed removing most or all of the ou
 <h4>Treatment of Categorical Features</h4>
 
 <h3>Nominal Features</h3>
-Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "fuel", "cylinders","type","transmission", "manufacturer", "state", "size", "paint_color", "title_status", "model", and "drive". The Pandas getdummies function to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. It is important to highlight that the columns: "model" and "region" were not encoded, i.e., not used for the rest of the analysis, since they contain 4375 and 389 features respectively. Otherwise, it will takes geological ages to do any modelling in my tiny laptop. Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure 28:
+Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "fuel", "cylinders","type","transmission", "manufacturer", "state", "size", "paint_color", "title_status", "model", and "drive". The Pandas getdummies function to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. It is important to highlight that the columns: "model" and "region" were not encoded, i.e., not used for the rest of the analysis, since they contain 4375 and 389 features respectively, i.e, way too may no handle in the modeling phase. Otherwise, it will takes geological ages to do any modelling in the tiny laptop used. Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure 28:
 
 </br>
 </br>
@@ -304,7 +304,7 @@ Since the dependent dataset X contains 145 columns, it was decided to give a try
 <h4 align="center"> Figure 34</h4>
 </p>                                                                                        
 
-As mentioned above, HoldOut Cross-validation, i.e,  he splitting data into training and validation sets was done using the train_test_split function as shown below:
+As mentioned above, HoldOut Cross-validation, i.e, splitting data into training and validation sets was done using the train_test_split function as shown below:
 
 </br>
 <p align="center">
@@ -324,7 +324,7 @@ The pipeline model is shown on Figure 36. Please note that the TransformedTarget
 <h4 align="center"> Figure 36</h4>
 </p>
 
-The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 37). the best alpha value estimated was 0.1. The metrics results are  shown on Figure 38. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 39). As mentioned before, the K-fold cross-validation technique was also used to estimate metrics, in this case  "neg_mean_squared_error" and "R^2" were chosen as a score (see Figure 40). Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute negatively are shown as table 2 and 3 respectively. 
+The GridSearchCV function was used to optimized the hyper-parameter alpha (see Figure 37). the best alpha value estimated was 0.1. The metrics results are  shown on Figure 38. The differences between the validation test and the predicted by the model are shown  as a histogram plot (Figure 39). As mentioned before, the K-fold cross-validation technique was also used to estimate metrics, in this case  "neg_mean_squared_error" and "R^2" were chosen as a score (see Figure 40). Regarding the regression coefficient obtained, there are 72 greater than 0, 64 less than 0, and none of them have zero value. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown as table 2 and 3 respectively. 
                   
 </br>
 <p align="center">
