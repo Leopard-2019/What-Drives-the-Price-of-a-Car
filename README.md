@@ -129,6 +129,7 @@ Table 1 shows the final statistics of the target column "price":
 Once an effective cleaning work has been completed, including removing most or all of the outliers. A boxplot "price" vs. the rest of the columns can be built & analyized as follows:
 
 </br>
+</br>
 <p align="center">
 <img src="images/boxplotprice&drive.png">
 <h4 align="center"> Figure 17</h4>
@@ -137,6 +138,7 @@ Once an effective cleaning work has been completed, including removing most or a
 <h4>Observation:</h4>As expected, the most expensive used cars are the ones with four wheels traction.
 
 </br>
+</br>
 <p align="center">
 <img src="images/boxplotprice&year.jpeg">
 <h4 align="center"> Figure 18</h4>
@@ -144,6 +146,7 @@ Once an effective cleaning work has been completed, including removing most or a
 
 <h4>Observation:</h4>It is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a really nice positive correlation between these two variables are expected.
 
+</br>
 </br>
 </br>
 <p align="center">
