@@ -107,6 +107,13 @@ Two passes were applied to the aforementioned columns in order to remove the out
 </br>
 </br>
 <p align="center">
+<img src="images/figure3_box2.jpeg" width="1000px">
+<h4 align="center"> Figure 11</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
 <img src="images/figure3_box2a.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
