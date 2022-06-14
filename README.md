@@ -1,6 +1,7 @@
 <h1>What Drives the Price of a Car?</h1>
 This python application using jupyter notebook explored a dataset containing information on 3 millions used cars in order to determine which factors make a car more or less expensive. 
 
+[Jupiter Notebook used](https://github.com/Leopard-2019/What-Drives-the-Price-of-a-Car/blob/main/notebook/PracticalApplicationAssignment_11_1-Copy1.ipynb)
 
 The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 
@@ -100,7 +101,7 @@ The presence of outliers in the numerical columns: 'price", "odometer", and "yea
 <h4 align="center"> Figure 12</h4>
 </p>
 
-Two passes were applied to the aforementioned columns in order to remove the outliers. Before applying these two passes, values equal to 0 and 1 were removed from the column "price". The first pass consisted on applying the well known Inter quartile range (IQR) method, and the second passes consisted on appyling the DBSCAN ("Density-Based Spatial Clustering of Applications with Noise") method. Figure 13, 14, and 15 shows the final results after applying those two methods to remove the outliers. As it can be observed, the two passes were very effective, i.e., removing the majority of the outliers if any left. As an additional comments, the target column "price" shows a distribution skewed to the right, i.e, its logarithm version was used during the regression modeling by using the TransformedTargetRegressor tool.
+Two passes were applied to the aforementioned columns in order to remove the outliers. Before applying these two passes, values equal to 0 and 1 were removed from the column "price". The first pass consisted on applying the well known Inter quartile range (IQR) method, and the second passes consisted on appyling the DBSCAN ("Density-Based Spatial Clustering of Applications with Noise") method. Figure 13, 14, and 15 shows the final results after applying those two methods to remove the outliers. As it can be observed, the two passes were very effective, i.e., removing the majority of the outliers if any left. As an additional comments, the target column "price" shows a distribution skewed to the left, i.e, its logarithm version was used during the regression modeling by using the TransformedTargetRegressor tool.
 
 </br>
 </br>
@@ -464,7 +465,7 @@ There was not need to use  GridSearchCV function, since there was not hyperparam
 
 </br>
 <p align="center">
-<img src="images/Model4_2.jpeg" width="400px">
+<img src="images/Model4_2.jpeg" width="350px">
 <h4 align="center"> Figure 52</h4>
 </p>
 
