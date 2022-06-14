@@ -87,12 +87,7 @@ The presence of outliers in the numerical columns: 'price", "odometer", and "yea
 <h4 align="center"> Figure 10</h4>
 </p>
 
-</br>
-</br>
-<p align="center">
-<img src="images/figure3_box2.jpeg" width="1000px">
-<h4 align="center"> Figure 11</h4>
-</p>
+
 
 </br>
 </br>
