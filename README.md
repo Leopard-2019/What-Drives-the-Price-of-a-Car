@@ -87,12 +87,6 @@ The presence of outliers in the numerical columns: 'price", "odometer", and "yea
 <h4 align="center"> Figure 10</h4>
 </p>
 
-</br>
-</br>
-<p align="center">
-<img src="images/figure3_box2.jpeg" width="1000px">
-<h4 align="center"> Figure 11</h4>
-</p>
 
 </br>
 </br>
@@ -135,6 +129,7 @@ Table 1 shows the final statistics of the target column "price":
 Once an effective cleaning work has been completed, including removing most or all of the outliers. A boxplot "price" vs. the rest of the columns can be built & analyized as follows:
 
 </br>
+</br>
 <p align="center">
 <img src="images/boxplotprice&drive.png">
 <h4 align="center"> Figure 17</h4>
@@ -143,6 +138,7 @@ Once an effective cleaning work has been completed, including removing most or a
 <h4>Observation:</h4>As expected, the most expensive used cars are the ones with four wheels traction.
 
 </br>
+</br>
 <p align="center">
 <img src="images/boxplotprice&year.jpeg">
 <h4 align="center"> Figure 18</h4>
@@ -150,6 +146,7 @@ Once an effective cleaning work has been completed, including removing most or a
 
 <h4>Observation:</h4>It is clear an upward trend, i.e. increases in both the median and the mean (white circular dot) of the price as year increases. Therefore, a really nice positive correlation between these two variables are expected.
 
+</br>
 </br>
 </br>
 <p align="center">
@@ -530,7 +527,7 @@ The variables that have the biggest impact on predicting the price car can be es
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values, and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".</p>
+<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc and dropping the less important columns consists of 136 columns and 429250 rows. The target columns was "price".</p>
 <p>2. The best regression model is the Ridge based on the metric estimated using both the hold-out and K-Fold cross-validation methods. An excelente R^2 score (a goodness-of-fit measure for linear regression models) of 0.82 was obtained, i.e., indicating how well this regression model fits the validation dataset.</p>
 <p> 3. It is important to highlight that the numerical variables "price", "odometer", and "year" were divided by 10000, 100000, and 1000 respectively, before initiating the regression modeling, since the rest of the columns have values 0 and 1, but the variable "conditon which is ordinal (i.e., integer values from 0 to 5). This step was very important to greatly improved the metrics,etc  of the regression models tested.</p>
 <p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
